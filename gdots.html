@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           width: 600px;
+           height: 300px;
+           /* border-radius: 30px; */
+           gap: 15px;
+           /* background-color: lightcyan; */
+           /* box-shadow: 10px 10px 10px lightcyan; */
+
+        }
+        .item1{
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #2874ed;
+            animation: one 1.5s infinite ease-in-out;
+            animation-delay: os;
+            
+        }
+        @keyframes one {
+            0% , 100%{
+              transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+        }
+        .item2{
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #eb092f;
+            animation: two 1.5s infinite ease-in-out;
+            animation-delay: 0.3s;
+        }
+        @keyframes two {
+            0% , 100%{
+              transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+
+        }
+        .item3{
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #faf214;
+            animation: three 1.5s ease-in-out 0.6s infinite ;
+        } 
+        @keyframes three {
+            0% , 100%{
+              transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+        }
+        
+         .item4{
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #0afa36;
+            animation: three 1.5s ease-in-out 0.8s infinite ;
+        } 
+        @keyframes three {
+            0%{
+              transform: translateY(0);
+            }
+            50%{
+               transform: translateY(-30px); 
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+    
+</body>
+</html>
